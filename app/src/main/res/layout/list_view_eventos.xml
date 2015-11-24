@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textNameEvent"
+        android:text="Aqui Nombre de Evento"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDescEvent"
+        android:text="Aqui Descripcion del Evento"
+        android:layout_below="@+id/textNameEvent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textFecha"
+        android:text="Aqui Fecha"
+        android:layout_below="@+id/textDescEvent"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inicio"
+        android:textStyle="bold"
+        android:layout_below="@+id/textFecha"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00 pm"
+        android:id="@+id/textInicio"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fin"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/textInicio"
+        android:layout_toRightOf="@+id/textInicio"
+        android:layout_toEndOf="@+id/textInicio"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"/>
+
+    <TextView
+        android:id="@+id/textFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00 pm"
+        android:layout_below="@+id/textFecha"
+        android:layout_toRightOf="@id/textView6"/>
+
+</RelativeLayout>

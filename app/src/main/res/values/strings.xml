@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">GLTour</string>
+    <string name="app2_name">GLT</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="descLug">Búsquedas Personalizadas</string>
+    <string name="descFav">Localice sus Lugares Preferidos</string>
+    <string name="desMV">Los Mejores Lugares</string>
+    <string name="descPerfil">Acceda a Configuraciones</string>
+    <string name="descAD">Información del Desarrollador</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="facebook_app_id">1590871647828093</string>
+
+    <string name="carga">Cargando Datos</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="successfully_posted_post">Post ID: %1$s</string>
+    <string name="ok">OK</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="hello_user">Hello %1$s!</string>
+
+    <!-- Datos de Usuario No Logeado-->
+    <string name="nameuser">Sesión No Iniciada</string>
+    <string name="info">Ir a Mi Perfil para Iniciar Sesión</string>
+
+    <!-- Strings para Lugares -->
+    <string name="textlugares">Opciones de Búsqueda</string>
+    <string name="textcanton">Según Cantón</string>
+    <string name="textlugar">Según Categoría</string>
+    <string name="textnombre">Según Nombre</string>
+    <string name="btnconsultar">Consultar</string>
+
+    <string name="titleDlgCantones">Seleccione un Cantón</string>
+    <string name="msjNoCantonSelec">"Por Favor Seleccione una Opción"</string>
+
+    <string name="titleDlgCategoria">Seleccione una Categoría</string>
+
+    <string name="titleDlgNombre">Nombre del Lugar</string>
+    <string name="hntDlgNNombre">Escriba el Nombre del Lugar</string>
+
+    <!-- Para lista de Luagres-->
+    <string name="descImg">Imagen de Prueba</string>
+
+    <!--Para info de lugares -->
+    <string name="sinSitios">No hay Sitios Turísticos para mostrar</string>
+    <string name="sinConexion">Actualmente esta sin Conexion. Conectese a una Red por favor.</string>
+    <string name="imgInfo">Imagen Principal</string>
+    <string name="textCalificar">Calificar</string>
+    <string name="textFavorito">Favorito</string>
+    <string name="textInfoSitio">Información del Sitio Turístico</string>
+
+    <string name="txtCantInf">Cantón:</string>
+    <string name="txtDesInf">Descripción:</string>
+    <string name="txtDireccion">Dirección:</string>
+    <string name="txtFono">Telefono:</string>
+    <string name="txtWeb">Web Site:</string>
+    <string name="txtHorario">Horario:</string>
+
+    <string name="calfUser">Usuario</string>
+    <string name="calfTotal">Total</string>
+
+    <string name="inicio">Inicio: </string>
+    <string name="fin">Fin: </string>
+
+    <string name="infComent">Comentarios</string>
+
+    <string name="no_login">Debe estar logeado para poder Calificar un Sitio</string>
+
+    <string name="favorito">Sitio Favorito</string>
+    <string name="nofavorito">No puede seleccionar este sitio como Favorito. Inicie Sesión</string>
+
+    <!--Para Dialog Calificacion -->
+    <string name="comentario">Descripción</string>
+    <string name="enviar">Enviar</string>
+    <string name="empty_datos">Debe Valorar con Estrellas y Comentar</string>
+    <string name="msj_envio">Su comentario ha sido enviado</string>
+
+    <!--Para layout informacion -->
+    <string name="sinImg">No hay imágenes que mostrar..!</string>
+    <string name="sinEvnt">No hay eventos programados..!</string>
+
+    <!-- Strings para Mis Favoritos -->
+    <string name="txtmfavoritos">Aqui Mis Favoritos</string>
+    <string name="txtInfoNL">Debe Iniciar Sesión para acceder a esta Información</string>
+
+    <!-- Strings para Mas Votados -->
+    <string name="txtmvotados">Aqui los Mas Votados</string>
+
+    <!-- Strings para Mi Perfil -->
+    <string name="txtmperfil">Aqui mi Perfil</string>
+
+    <!-- Strings para Acerca De -->
+    <string name="txtmacercad">Aqui Acerca De</string>
+    <string name="nameApp">GLTour</string>
+
+    <string name="descripcionAD">GL Tour es una aplicación móvil que te facilita encontrar un lugar
+        turístico dentro de la Provincia de Los Ríos, de acuerdo a tus gustos y preferencias,
+        mediante parámetros de búsquedas personalizados. Además podrás interactuar con los mapas
+        para conocer las rutas hacia los lugares que deseas visitar. Se encuentra disponible para
+        la plataforma Android</string>
+
+    <string name="herramientas">Herramientas Utilizadas:</string>
+    <string name="laravel5">Laravel 5</string>
+    <string name="php">PHP</string>
+    <string name="phpStorm">PHPStorm v.8</string>
+    <string name="android">Android Studio 1.2</string>
+    <string name="facebook">Facebook SDK 4.1.2</string>
+    <string name="picasso">Picasso 2.5.2</string>
+    <string name="mysql">MySQL v. 5.6</string>
+
+    <string name="anio">2015</string>
+</resources>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageLugar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/descImg"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textNameLugar"
+        android:text="Aqui Nombre de Lugar"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageLugar"
+        android:textStyle="bold"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDescLugar"
+        android:text="Aqui Descripcion del Lugar"
+        android:layout_below="@+id/textNameLugar"
+        android:layout_toRightOf="@+id/imageLugar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textCanton"
+        android:text="Aqui Canton"
+        android:layout_below="@+id/textDescLugar"
+        android:layout_toRightOf="@+id/imageLugar" />
+
+    <RatingBar
+        android:id="@+id/ratingLugar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="1"
+        android:layout_below="@+id/textDescLugar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

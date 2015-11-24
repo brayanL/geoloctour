@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagePrincipal"
+                android:contentDescription="@string/imgInfo"
+                android:scaleType="fitXY"
+                />
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/textCalificar"
+                            android:id="@+id/btnCalificar" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <!--<Button
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/textFavorito"
+                            android:id="@+id/btnFavorito" />-->
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/checkFavorite"
+                            android:text="@string/favorito"
+                            android:padding="15dp"
+                            android:layout_gravity="center"
+                            android:button="@android:drawable/btn_star"/>
+                    </FrameLayout>
+                </TableRow>
+
+            </TableLayout>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <FrameLayout
+                        android:padding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingBarUsuario"
+                            android:numStars="5"
+                            android:isIndicator="true"
+                            android:layout_gravity="center"
+                            style="?android:attr/ratingBarStyleSmall"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:padding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ratingBarTotal"
+                            android:numStars="5"
+                            android:isIndicator="true"
+                            android:layout_gravity="center"
+                            style="?android:attr/ratingBarStyleSmall"/>
+                    </FrameLayout>
+                </TableRow>
+
+                <TableRow>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/calfUser"
+                            android:id="@+id/textView2"
+                            android:gravity="center"/>
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/calfTotal"
+                            android:id="@+id/textView3"
+                            android:gravity="center"/>
+                    </FrameLayout>
+                </TableRow>
+            </TableLayout>
+            <!-- shrinkColumns permite que el contenido de las columnas se ajusten al tamaño de la
+                misma, es decir se encoja(shrink)-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="2">
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:padding="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="@string/textInfoSitio"
+                            android:id="@+id/textView4"
+                            android:gravity="center"/>
+                    </FrameLayout>
+                </TableRow>
+                <!---SEccion para Informacion del Sitio Turistico -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/material_deep_teal_500"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_column="1"
+                        android:text="@string/txtCantInf"
+                        android:padding="7dp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Aqui"
+                        android:gravity="left"
+                        android:padding="7dp"
+                        android:id="@+id/cantonInf">
+                    </TextView>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/material_deep_teal_500"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_column="1"
+                        android:text="@string/txtDesInf"
+                        android:padding="7dp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Aqui"
+                        android:gravity= "left"
+                        android:padding="7dp"
+                        android:id="@+id/descInf">
+                    </TextView>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/material_deep_teal_500"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_column="1"
+                        android:text="@string/txtDireccion"
+                        android:padding="7dp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Aqui"
+                        android:gravity="left"
+                        android:padding="7dp"
+                        android:id="@+id/direccInf">
+                    </TextView>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/material_deep_teal_500"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_column="1"
+                        android:text="@string/txtFono"
+                        android:padding="7dp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Aqui"
+                        android:gravity="left"
+                        android:padding="7dp"
+                        android:id="@+id/fonoInf"
+                        android:autoLink="phone">
+                    </TextView>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/material_deep_teal_500"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_column="1"
+                        android:text="@string/txtWeb"
+                        android:padding="7dp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Aqui"
+                        android:gravity="left"
+                        android:padding="7dp"
+                        android:id="@+id/swebInf"
+                        android:autoLink="web"
+                        android:clickable="false"
+                        android:editable="false">
+                    </TextView>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="@color/material_deep_teal_500"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_column="1"
+                        android:text="@string/txtHorario"
+                        android:padding="7dp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Aqui"
+                        android:gravity="left"
+                        android:padding="7dp"
+                        android:id="@+id/horarioInf">
+                    </TextView>
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/infComent"
+                    android:id="@+id/textComent"
+                    android:gravity="center"/>
+                </TableLayout>
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewCP" />
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewCT" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
